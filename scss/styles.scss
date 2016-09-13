@@ -1,0 +1,171 @@
+$colorOverlay : #f2f2f2;
+$pageGutter : 12px;
+$gutter : 5px;
+
+*{padding: 0;margin: 0;}
+body{ background-color: $colorOverlay;}
+
+.sub-container
+{
+    padding: 0 $pageGutter $pageGutter $pageGutter;
+    }
+.container{
+    padding:0;
+    width: 100%;
+    background-color: $colorOverlay;
+}
+/*mixins */
+@mixin contact-icon($image,$height,$width,$indent){
+background-image: url(../#{$image}.png);
+background-repeat: no-repeat;
+background-size: $width $height;
+text-indent: $indent;
+height: $height;
+line-height: $height;
+display: inline-block;
+vertical-align: middle;
+}
+.header{
+    height: 50px;
+    padding-top: 12px;
+}
+
+
+.tempb{
+    height: 170px;
+}
+.logo a {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: 374px 46px;
+  width: 374px;
+  height: 46px;
+  text-indent: -9999px;
+  display: block; }  
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.icon-phone {
+    @include contact-icon(images/phone,13px,13px,15px);
+}
+
+.icon-mail{
+    @include contact-icon(images/mail,13px,13px,15px);
+    margin-left: 50px;
+}
+
+.icon-cart{
+    @include contact-icon(images/cart,17px,16px,17px);
+    margin-left: 20px;
+
+}
+
+.login{
+    @include contact-icon(images/bar,38px,1px,17px); 
+    margin-left:20px;
+    text-decoration: underline;
+}
+
+.bar {
+    @include contact-icon(images/bar,38px,1px,20px);
+    font-size: 24px;
+    margin-left: 20px;
+}
+a.bar{color:#444444;}
+
+.nav-bg{
+    background-color: rgba(255, 255, 255, 0.54);
+    height: 70px;
+    margin:0 auto;
+    position: relative;
+    width: calc(100% - 30px);
+    padding-top: calc(35px - 19px);
+    z-index: 99;
+     }
+    
+
+.register{
+     background-image: url(../images/button-normal.png);
+background-repeat: no-repeat;
+width:167px;
+height: 41px;
+line-height: 41px;
+display: inline-block;
+vertical-align: middle;
+margin-left: 20px;
+text-indent: -9999px;
+}
+a.register:hover{
+     background-image: url(../images/rollover.png);
+}
+
+.header{
+    text-align: right;
+}
+
+
+.col-register{
+    border: 1px solid rgba(255, 255, 255, 0.54);
+    border-radius: 10px;
+    outline-color: rgba(255, 255, 255, 0.54);
+    height: 54px;
+    width: 331px;
+    line-height: 54px;
+    float:right;
+    background-color: #ffffff;
+    
+}
+.searchbox{
+height: 20px;
+position:relative;
+top: 10px;
+display: block;
+
+}
+input[type=search] { 	
+	font-size: 12px;
+    color:#ab9f8d;            
+	border: 1px solid #cfc8bc;  
+	background:#f5f5f5;          
+	line-height: 20px;  
+    height: 20px;
+    width:155px;         
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+.slider{background-color: #9ccd8d;
+background-size: cover;
+position: relative;
+top:-35px;
+z-index: auto;
+margin-left:-12px;
+margin-right:-12px;
+height: 538px;
+}
+
+
+
+
+.left-arrow{
+    @include contact-icon(images/circle,63px,63px,#{31.5px - 10px});
+    position: relative;
+top: -259px;
+left:$pageGutter;
+display: block;
+}
+
+.right-arrow{
+    @include contact-icon(images/circle,63px,63px,#{31.5px - 10px});
+    position: relative;
+top: -322px;
+right:calc(-100% + 75px);
+display: block;
+}

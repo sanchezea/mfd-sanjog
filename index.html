@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Angular 2 QuickStart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sub-container">
+      <div class="row header">
+        <div class="col-sm-12 contact">
+          <span class="icon-phone">090-223 44 66</span>
+          <span class="icon-mail">help@trendd.com</span>
+        </div>
+      </div>
+<!-- row ends-->
+      <div class="row tempb">
+        <div class="col-sm-6 logo">
+          <span id=""><a href="#">home page</a></span>
+        </div>
+
+         
+           <div class="col-register">
+          <span class="icon-cart">&nbsp;</span>
+          <span class="login">LOGIN</span>
+          <a href="#" class="register">register</a>
+           </div>
+        
+      </div>  
+<!-- row ends-->
+    
+
+  
+
+<!--container begins-->
+<div class="container">
+  <div class="row nav-bg">
+        
+        <div class="col-sm-9">
+        <a href="#" class="bar">PRODUCTS</a>
+        <a href="#" class="bar">PRODUCTS</a>
+        <a href="#" class="bar">PRODUCTS</a>
+        <a href="#" class="bar">PRODUCTS</a>
+        </div>
+        <div class="col-sm-3 searchbox">
+          <input id="search" type="search">
+        </div>
+      </div>
+    </div>
+      
+      <!-- row ends-->
+        <!--slider -->
+
+<div id="carousel-example-generic" class="carousel slide slider" data-ride="carousel">
+  <!-- Indicators -->
+  
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="../images/slider1.jpg" width="100%" alt="">
+    </div>
+    <div class="item">
+      <img src="../images/slider1.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left" role="button" data-slide="prev">
+    <span class="left-arrow" aria-hidden="true"><img src="images/left.png"</span>
+  </a>
+  <a class="right" role="button" data-slide="next">
+    <span class="right-arrow" aria-hidden="true"><img src="images/right.png"</span>
+  </a>
+</div>
+
+        <!-- end of slider-->
+        
+      </div>
+
+
+    </div>
+    </div>
+    <my-app>Loading...</my-app>
+  </body>
+</html>
